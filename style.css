@@ -67,6 +67,7 @@ button{
     font-weight: bolder;
     border-radius: 5px;
     padding: .9rem;
+    margin-bottom: 1rem;
     
 }
 
@@ -93,21 +94,32 @@ footer{
 .article h2{
     font-size: 25px;
 }
+/* Estilos base del modal */
+.modal {
+    display: none; /* Iniciar el modal cerrado */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 .modal-content {
-    
+    background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    text-align: center; /* Centrar contenido */
+    max-width: 600px; /* Ancho máximo del modal */
 }
 
-.modal-content img {
-    display: block; /* Para centrar la imagen */
-    margin: 0 auto; /* Centrar la imagen horizontalmente */
-    max-width: 100%; /* Asegurar que la imagen no exceda el ancho del modal */
-    max-height: 70vh; /* Limitar la altura de la imagen al 70% del alto de la ventana */
-    margin-bottom: 2rem;
+/* Media query para hacerlo responsive */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Ajustar el ancho para dispositivos más pequeños */
+    }
 }
 

@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnCloseModal = document.getElementById('btnCloseModal');
     const spanClose = document.getElementsByClassName('close')[0];
 
+    // Agrega esta línea para iniciar el modal cerrado
+    modal.style.display = 'none';
+
     btnOpenModal.onclick = function () {
         modal.style.display = 'block';
         showConfetti();
@@ -32,4 +35,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
