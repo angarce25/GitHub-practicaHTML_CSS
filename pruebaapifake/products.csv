@@ -1,0 +1,7 @@
+`id`;`Name`;`Image`;`Price`;`Description`;`Stock`
+1;happyPhone1;"src=""C:\Users\andre\OneDrive\Escritorio\HappyPhonev_2.0\HappyPhonev2.0\img\happy1.png""";200 €;tiene x y z;2
+2;happyPhone2;;300 €;tiene x y z;3
+3;happyPhone3;;400 €;tiene x y z;6
+4;happyPhone4;;500 €;tiene x y z;5
+5;happyPhone5;;600 €;tiene x y z;3
+6;happyPhone6;;900 €;tiene x y z;4

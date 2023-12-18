@@ -1,0 +1,37 @@
+body{
+    background-color: blanchedalmond;
+}
+.flex-container{
+    border: 1px solid black;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;/*se acomoda arriba y abajo segun la web*/
+    flex-flow: row wrap;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    align-content: center;
+}
+.caja{
+    border: 1px solid rgb(70,69,69);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin:5px;
+}
+
+/*podemos ordenar las cjas con la propiedad order=1..., según nos interese*/
+/*flex-group da ancho a cada caja para que ocupe más o menor ancho*/
+/*flex-basis: es lo mismo que un width das la amplitud que ocupa del total, se combina con el grow*/
+
+/*funcionalidad muy interesante de grip, grip-template-areas: 'cabecera cabecera'
+                                                                'menu menu'
+                                                                luego podemos añadir a cada caja la familia del area, podemos mezclar
+                                                                con grip-template-rows y float*/
